@@ -14,7 +14,7 @@ def load_pneumonia_model():
     return keras.models.load_model("pneumonia_model.h5")
 
 model = load_pneumonia_model()
-THRESHOLD = 0.70
+THRESHOLD = 0.50
 
 st.title("🫁 Chest X-Ray Pneumonia Detection")
 st.write(
