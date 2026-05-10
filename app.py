@@ -30,7 +30,7 @@ uploaded_file = st.file_uploader(
 
 if uploaded_file is not None:
     img = Image.open(uploaded_file).convert("RGB")
-st.image(img, caption="Yüklenen X-Ray Görüntüsü", use_column_width=True)
+    st.image(img, caption="Yüklenen X-Ray Görüntüsü", use_column_width=True)
     img_resized = img.resize((224, 224))
     img_array = np.array(img_resized, dtype=np.float32) / 255.0
     img_array = np.expand_dims(img_array, axis=0)
