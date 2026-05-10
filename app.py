@@ -21,7 +21,7 @@ st.write(
     "Bu uygulama göğüs röntgen görüntüsünü analiz ederek "
     "**NORMAL** veya **PNEUMONIA** tahmini yapar."
 )
-st.info("Final model: MobileNetV2 | Threshold: 0.70 | Test Accuracy: %90.22")
+st.info("Final model: MobileNetV2 | Threshold: 0.50 | Test Accuracy: %90.22")
 
 uploaded_file = st.file_uploader(
     "Bir göğüs röntgen görüntüsü yükleyin",
