@@ -11,7 +11,7 @@ st.set_page_config(
 
 @st.cache_resource
 def load_pneumonia_model():
-    return keras.models.load_model("pneumonia_mobilenetv2_final.keras")
+    return keras.models.load_model("pneumonia_model.h5")
 
 model = load_pneumonia_model()
 THRESHOLD = 0.70
